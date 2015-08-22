@@ -7857,6 +7857,7 @@ class UpdateStatus(Screen):
 							i = audio.getTrackInfo(idx)
 							self.Laudiodescription = i.getDescription()
 							L4logE("Audio %d" % idx, self.Laudiodescription)
+							idx += 1
 			self.Levent_begin0, self.Levent_end0, self.Lduration0, self.Levent_name0 = getServiceInfo(self,0)
 			self.Levent_begin1, self.Levent_end1, self.Lduration1, self.Levent_name1 = getServiceInfo(self,1)
 
